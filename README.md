@@ -1,18 +1,41 @@
-## Getting Started
+# ProductStreamProcessor
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto demonstra o uso de Streams em Java para processar e manipular dados de um arquivo de entrada. Ele calcula o preço médio de uma lista de produtos e exibe os nomes dos produtos que possuem preço abaixo da média, ordenados em ordem decrescente.
 
-## Folder Structure
+## Estrutura do Projeto
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Arquivos principais:
+- **App.java**: Classe principal que contém a lógica do programa.
+- **Product.java**: Classe que representa um produto com nome e preço.
+- **in.txt**: Arquivo de entrada com os dados de produtos no formato `nome,preço`.
+- **result.png**: Imagem de exemplo com o resultado do programa.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Funcionalidades
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+1. **Leitura de Arquivo**:
+   - Lê dados de um arquivo no formato CSV (`nome,preço`).
+   - Exemplo do conteúdo de `in.txt`:
+     ```
+     TV,900.00
+     Mouse,50.00
+     Keyboard,120.00
+     Monitor,320.00
+     ```
 
-## Dependency Management
+2. **Cálculo da Média**:
+   - Calcula o preço médio de todos os produtos.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+3. **Filtragem e Ordenação**:
+   - Filtra os produtos com preço abaixo da média.
+   - Ordena os nomes dos produtos em ordem decrescente.
+
+### Exemplo de Entrada
+
+Arquivo `src/assets/in.txt`:
+
+### Exemplo Visual de Saída
+
+A imagem abaixo ilustra a execução do programa:
+
+![Exemplo Visual](src/assets/result.png)
